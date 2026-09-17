@@ -4,3 +4,12 @@
 
 number = int(input("Enter a number :"))
 
+reverce = 0
+while(number != 0):
+  remender = number % 10
+  reverce = reverce*10 + remender
+  number = number // 10
+
+print(f"reverce : {reverce}")
+
+
