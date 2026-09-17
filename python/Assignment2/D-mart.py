@@ -139,7 +139,7 @@ product5_item_total_price = product5_quantity * product5_cost
 product5_item_total_price_with_discount = product5_item_total_price - (product5_item_total_price * 0.10)
 
 #  on 10th product purchase you have to offer 15% discount on total price of that product.
-product10_item_total_price = product10_quantity * product5_cost
+product10_item_total_price = product10_quantity * product10_cost
 product10_item_total_price_with_discount = product10_item_total_price - (product10_item_total_price * 0.15)
 
 product2_item_total_price = product2_quantity * product2_cost
