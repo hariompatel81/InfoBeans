@@ -2,11 +2,19 @@
 
 number = int(input("Enter a number :"))
 
-armstrong = 0
+# calculate number digit length
 temp = number
+length = 0
+while number != 0 :
+  length += 1
+  number //= 10
+
+# check perfect
+armstrong = 0
+number = temp
 while(temp != 0) :
   remainder = temp % 10
-  armstrong += remainder**3
+  armstrong += remainder**length
   temp //= 10
 
 if armstrong == number :
