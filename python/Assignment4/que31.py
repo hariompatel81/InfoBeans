@@ -1,20 +1,25 @@
-# strong number
+# check number is strong number or not
 
 number = int(input("Enter a number :"))
 
-fact = 1
-def factorial(n):
-  for i in range(2,n+1):
-    fact *= i
-    return fact
-
+temp = number 
 strong = 0
-remainder = 0
+fact = 1
 while(number != 0):
   remainder = number % 10
-  strong += factorial(remainder) 
-  number //= 10
+ 
+  while remainder > 1 :
+    fact *= remainder
+    remainder -= 1
 
-print(f"Strong number is : {strong}")
+  number //= 10
+  strong += fact
+  fact = 1
+
+if strong == temp :
+  print(f"{temp} is strong number.")
+else :
+  print(f"{temp} is not strong number.")
+
 
 
