@@ -1,4 +1,4 @@
-# armstrong number
+# W.A.P to check armstrong number
 
 number = int(input("Enter a number :"))
 

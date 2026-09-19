@@ -1,4 +1,4 @@
-# count of a digit number
+# count digit of a number
 
 number = int(input("Enter a number :"))
 
