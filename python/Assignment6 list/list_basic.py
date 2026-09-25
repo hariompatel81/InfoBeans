@@ -37,6 +37,9 @@ print(f"Size : {sys.getsizeof(x)}")
 # add element according to index
 x.insert(1,34) 
 print(f"add element at index 1 : {x}")
+x.insert(3,"hello")
+
+# 
 
 
 
