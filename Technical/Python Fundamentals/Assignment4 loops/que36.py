@@ -1,0 +1,7 @@
+# 1 2 3 4  Hello 6 7 8 9 Hello 11 12 …. 
+n = int(input("Enter a number :"))
+for i in range(1,n) :
+  if i % 5 == 0 :
+    print("Hello",end=" ")
+  else :
+    print(i,end=" ")
