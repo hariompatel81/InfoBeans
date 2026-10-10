@@ -18,3 +18,19 @@ Output: 1
 Explanation: The index range for the 
 subarray is (3,4).
 '''
+
+l = [1,0,0,1,0,1,1]
+count = 0
+for i in range(len(l)) :
+  zc = 0
+  oz = 0
+  for j in range(i,len(l)) :
+    if l[j] == 0 :
+      zc += 1
+    else :
+      oz += 1
+    if zc == oz :
+      count += 1
+      print(i,j)
+
+print("Sub array count is : ",count)

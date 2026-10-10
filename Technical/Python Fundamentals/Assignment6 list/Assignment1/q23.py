@@ -38,16 +38,17 @@ for i in range(n) :
     temp = i
     break
 
-if n == 1 and n == 0:
+if n == 1 or n == 0:
   print("nearest greater and lesser element are not present.")
-elif temp == 0 :
+elif temp == 0 and (len(l) > temp) :
   print("Lesser is not available and greater is ",l[temp+1])
-elif temp == n-1 :
+elif temp == n-1 and (len(l) > temp):
   print("Greater is not available and lesser is ",l[temp-1])
 else :
-  while l[temp] == l[temp-1] and temp > 0 :
+  while temp > 0 and l[temp] == l[temp-1] :
     temp -= 1
-  while l[temp] == l[temp+1] and temp < n-1 :
+  while temp < n-1 and l[temp] == l[temp+1] :
     temp += 1
-  print(f"Lesser is {l[temp-1]} and Greater is {l[temp+1]}")
+  if temp > 0 and temp < n-1 :
+    print(f"Lesser is {l[temp-1]} and Greater is {l[temp+1]}")
 

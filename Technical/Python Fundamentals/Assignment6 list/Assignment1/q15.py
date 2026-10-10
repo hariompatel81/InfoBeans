@@ -13,19 +13,19 @@ Hence, the output is 3.
 Example 2:
 Input : arr[] = {1, 1, 1}
 Output : 0
- 
-
 '''
-# l = [-1,2,-1,3,2]
-# found = True
-# for i in range(len(l)-1) :
-#   temp = l[len(l)-1]
-#   for j in range(len(l)-1,0,-1) : 
-#     if temp ==  l[j-1] :
-#       found = False
-#     l[j] = l[j-1]
-#   l[0] = temp
+l = [-1,2,-1,3,2]
+found = True
+for i in range(len(l)) :
+  for j in range(len(l)) : 
+    if i != j and l[i] ==  l[j] :
+      found = False
+      break
+    
+  if found :
+    print("First non-repeating element :",l[i])
+    break
+else :
+  print("0")
 
-#   if found :
-#     print("First non-repeating element :",temp)
   

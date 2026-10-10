@@ -22,9 +22,8 @@ Output:
 Explanation:
 1, 2, 3, 4 is the longest
 consecutive subsequence.
-
 '''
-l = [1,9,3,10,4,20,2]
+l = [1,1,9,3,10,4,20,2]
 
 sequence = 0
 while True :
