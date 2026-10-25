@@ -1,13 +1,21 @@
 # 35. Expand a compressed string.
 # Example: "a3b2c4" → "aaabbcccc"
 
-s = "a3b2c4"
-l = list(s)
-l1 = []
-for i in range(1,len(l)):
-  if l[i].isdigit():
-    l1.append(l[i-1]*int(l[i]))
+def expand_string(s):
+  s1 = []
+  result = ""
+  for ele in s:
+    if ele.isdigit():
+      result += "".join(s1)*int(ele)
+      s1 = []
+    else :
+      s1.append(ele)
+  if not s1:
+    return result
+  else :
+    result += "".join(s1)
+    return result
 
-result = "".join(l1)
-print(result)
+s = input("Enter string : ")
+print(f"Expanded string is : {expand_string(s)}")
 

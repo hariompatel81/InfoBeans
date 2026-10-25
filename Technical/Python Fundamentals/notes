@@ -81,7 +81,34 @@ TypeCasting :-
   
   
   
-  
+  data---
+  structured
+    relational-sql
+    .xlsx
+    .csv
+  unstructured
+    image
+    video
+    audio
+    documents
+  semistructured
+    json
+    xml
+    html
+
+types of data
+perceptron
+eliza
+atention is all you need
+hugging face
+gpt oss
+gen al
+agentic AI
+AI agent
+matrix movie
+FDE
+
+
   
   
   

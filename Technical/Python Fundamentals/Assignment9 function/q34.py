@@ -1,18 +1,25 @@
 # 34. Compress a string by counting consecutive repeated characters.
 # Example: "aaabbccccd" → "a3b2c4d1"
 
-s = "aaabbccccd"
-d = {}
-for ele in s:
-  d[ele] = d.get(ele,0)+1
+def compress_string(s):
+  if not s:
+    return ""
+  else :
+    count = 1
+    s1 = ""
+    for i in range(len(s)-1):
+      
+      if s[i] == s[i+1]:
+        count += 1
+      else :
+        s1 += s[i]+ str(count)
+        count = 1
+    s1 += s[i] + str(count)
+    return s1
 
-l = []
-for key, value in d.items():
-  l.append(str(key))
-  l.append(str(value))
+s = input("Enter a string: ")
+print(f"Compress String : {compress_string(s)}")
 
-result = "".join(l)
-print(result)
   
 
   
